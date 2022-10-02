@@ -4,12 +4,18 @@ const brands = require("./data/brands");
 const itemTypes = require("./data/itemTypes");
 const products = require("./data/products");
 
+const games = products.map((game, index) => {
+  game.id = index + 1;
+  return game;
+});
+
 module.exports = {
   items,
   tags,
   brands,
   itemTypes,
   products,
+  games,
 };
 
 // const items = require("./data/items");
