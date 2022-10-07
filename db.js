@@ -6,8 +6,6 @@ const products = require("./data/products");
 
 const games = products.map((game, index) => {
   game.id = index + 1;
-  game.platform = game.platform.replace(/['"]+/g, "");
-  game.genre = game.genre.replace(/['"]+/g, "");
   game.inStock = Math.random() < 0.5;
   return game;
 });
