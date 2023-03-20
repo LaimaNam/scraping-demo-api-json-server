@@ -15,7 +15,7 @@ module.exports = {
   tags,
   brands,
   itemTypes,
-  products: games,
+  products: games.slice(0, 3000),
 };
 
 // const items = require("./data/items");
