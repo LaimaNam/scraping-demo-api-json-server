@@ -6,7 +6,7 @@ const products = require("./data/products");
 
 const games = products.map((game, index) => {
   game.id = index + 1;
-  game.inStock = Math.random() < 0.5;
+  game.inStock = index % 2 === 0;
   return game;
 });
 
